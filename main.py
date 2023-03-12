@@ -14,3 +14,10 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+txt = "Ala ma kota"
+number = 12
+num_with_precision = 9.99
+true_or_false = True
+
+#wyświetlenie na konsoli
+print(10 + 9.99)
