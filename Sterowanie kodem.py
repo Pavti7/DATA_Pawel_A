@@ -20,3 +20,16 @@ if 2 <= ocena <= 5:
     print("Ocena prawidłowa")
 else:
     print("Ocena nieprawidłowa")
+
+# elif - sprawdza kolejny warunek, jak poprzedni był nieprawidłowy
+cost = 3.10
+product = "cebula"
+
+if product == "cebula" and cost <= 3:
+    print("Kupujesz cebulę")
+elif product == "marchewka" and cost <= 4.5:
+    print("Kupujesz marchewkę")
+elif product == "zgniła cebula" and cost <= 1.9:
+    print("Nie kup[uj tego gówna")
+else:
+    print("Wychodzisz bez zakupów.")
