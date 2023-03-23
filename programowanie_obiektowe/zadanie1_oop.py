@@ -30,6 +30,14 @@ class Student:
             print("Dodano oceną ")
         else:
             print("Ocena nieprawidłowa ")
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} - {self.grades}"
+
+    def __int__(self):
+        return int(sum(self.grades))
+
+    def __float__(self):
+        return self.avg_grade
 
 s1 = Student("Jan", "Kowalski")
 print(s1.first_name, s1.grades, s1.avg_grade)
