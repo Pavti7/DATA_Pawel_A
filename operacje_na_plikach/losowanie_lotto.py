@@ -4,7 +4,6 @@
 #
 # Przykład: użytkownik podaje n = 2
 # Wynik (zawartość pliku):
-#
 # 2 6 12 40 31 22
 # 12 34 49 21 1 12
 from random import randint

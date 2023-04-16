@@ -5,7 +5,7 @@ print("KALKULATOR WALUT")
 
 waluta = input("Podaj walutę: ")
 
-dzien = input("Podaj dzień (RRRR-MM-DD)L ")
+dzien = input("Podaj dzień (RRRR-MM-DD): ")
 
 strona = get(f"http://api.nbp.pl/api/exchangerates/rates/a/{waluta}/{dzien}/?format=json")
 

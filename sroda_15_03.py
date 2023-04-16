@@ -41,3 +41,32 @@ print(contacts)
 del contacts["Iza"] # Dla ciekawskich
 print(contacts)
 
+def add_contacts(con_dict: dict, key: str, value: str):
+    if key in con_dict.keys():
+        print("Kontakt istnieje")
+    else:
+        con_dict[key] = value
+        print("Kontakt dodano")
+
+contacts2 = {
+            "Ewa": "00988765432"
+
+        }
+add_contacts(contacts2, "Ewa", "47457453")
+add_contacts(contacts2, "Adam", "76553435")
+print(contacts2)
+
+# Krotka (tuple)
+metadata = ("Python w DS", "1.0", "20230315", "20230315")
+print(metadata)
+print(metadata[0], metadata[3], len(metadata))
+print(metadata.count("20230315"))
+
+# Zbiór
+numbers = {1, 2, 3, 4, 5, 6, 7, 1, 2, 3}
+#Pusty zbiór: n = set()
+print(numbers)
+numbers.add(9)# dodanie pojedynczego elementu
+numbers.update([1, 4, 5, 2, 0, 11]) # Dodanie listy elementów
+numbers.update(["a", "b", "c"])
+print(numbers)

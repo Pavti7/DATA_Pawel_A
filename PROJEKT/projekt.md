@@ -11,7 +11,7 @@ W przypadku losowości wartości użyjecie randint oraz uniform (obie znajdują 
 nazwa pliku: dane_dzienmiesiacrok
 
 ##Zadanie 02
-Wykorzystując dane z ***Zadanie 01:***
+Wykorzystując dane z **Zadanie 01:**
 
 Dodać nową kolumnę do pliku (można do nowego), która będzie wynikiem operacji matematycznej: kol2 * kol3, natomiast pierwsza kolumna ma posiadać informacje tylko o godzinie.
 
