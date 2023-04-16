@@ -14,7 +14,7 @@ class SayHello(App):
         # add widgets to window
 
         # image widget
-        self.window.add_widget(Image(source="logo.png"))
+        self.window.add_widget(Image(source="megadent_logo_m.png"))
         #label widget
         self.greeting = Label(
                         text="Jak masz na imię?",
@@ -24,25 +24,26 @@ class SayHello(App):
         self.window.add_widget(self.greeting)
         # text input widget
         self.user = TextInput(
-                    multuline=False,
+                    multiline = False,
+                    font_size = 25,
                     padding_y = (20,20),
                     size_hint = (1, 0.5)
                     )
         self.window.add_widget(self.user)
         # button widget
         self.button = Button(
-                      text="GREET",
+                      text="START",
                       size_hint = (1, 0.5),
                       bold = True,
                       background_color = '#00FFCE'
                       )
-        self.button.bind(on_press=self.callback())
+        self.button.bind(on_press=self.callback)
         self.window.add_widget(self.button)
 
         return self.window
 
     def callback(self, instance):
-        self.greeting.text = "Hallo " + self.user.text + "!"
+        self.greeting.text = "Cześć " + self.user.text + " !"
 
 
 if __name__== "__main__":
